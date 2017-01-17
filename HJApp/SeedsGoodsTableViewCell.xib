@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="246" id="KGk-i7-Jjw" customClass="SeedsGoodsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi9-4t-VUY">
+                        <rect key="frame" x="20" y="23" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="07e-6d-f5V"/>
+                            <constraint firstAttribute="height" constant="21" id="snF-dI-KNV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2X-77-gPb">
+                        <rect key="frame" x="8" y="52" width="358" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="c33-Qc-ox1"/>
+                        </constraints>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nEM-wN-SjU">
+                        <rect key="frame" x="33" y="61" width="308" height="176"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gi9-4t-VUY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1VF-qV-X3y"/>
+                    <constraint firstItem="nEM-wN-SjU" firstAttribute="top" secondItem="U2X-77-gPb" secondAttribute="bottom" constant="8" id="4kp-pe-Xff"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nEM-wN-SjU" secondAttribute="trailing" constant="25" id="4o2-NM-gIM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nEM-wN-SjU" secondAttribute="bottom" id="5da-LF-aVP"/>
+                    <constraint firstItem="nEM-wN-SjU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="Kcd-uw-syK"/>
+                    <constraint firstItem="U2X-77-gPb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NKv-4f-r60"/>
+                    <constraint firstItem="nEM-wN-SjU" firstAttribute="top" secondItem="U2X-77-gPb" secondAttribute="bottom" constant="8" id="OSm-7P-VTa"/>
+                    <constraint firstItem="Gi9-4t-VUY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="emR-nz-fKd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="U2X-77-gPb" secondAttribute="trailing" id="fxk-bt-0kl"/>
+                    <constraint firstItem="U2X-77-gPb" firstAttribute="top" secondItem="Gi9-4t-VUY" secondAttribute="bottom" constant="8" id="scY-tv-pyo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desc" destination="nEM-wN-SjU" id="cpd-Yd-Tky"/>
+            </connections>
+            <point key="canvasLocation" x="367" y="288"/>
+        </tableViewCell>
+    </objects>
+</document>
