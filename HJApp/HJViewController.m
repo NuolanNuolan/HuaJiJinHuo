@@ -291,7 +291,8 @@
     order.partner = partner;
     order.seller = seller;
     order.tradeNO = out_trade_no; //订单ID（由商家?自?行制定）
-    order.productName = [NSString stringWithFormat:@"花集网支付单号：%@",out_trade_no] ; //商品标题
+//    order.productName = [NSString stringWithFormat:@"花集网支付单号：%@",out_trade_no] ; //商品标题
+   order.productName = @"..";//商品标题
     order.productDescription = [NSString stringWithFormat:@"支付金额：%@",amount]; //商品描述
     order.amount = amount; //商品价格
     order.notifyURL = @"http://www.huaji.com/pay/wapalipay/notify_url.php"; //回调URL

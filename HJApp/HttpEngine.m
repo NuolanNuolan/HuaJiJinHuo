@@ -1512,6 +1512,7 @@
         complete(dataArray);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         MYLOG(@"Error:%@",error);
+//        [self errorData:error.userInfo withKey:@""];
     }];
 
 }

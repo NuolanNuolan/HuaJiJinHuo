@@ -127,29 +127,30 @@
         [lab_yuan setFont:[UIFont systemFontOfSize:12]];
         [lab_yuan setText:@"元"];
         [lab_yuan setTextColor:[UIColor redColor]];
-        NSArray *btnarr = [[NSArray alloc]initWithObjects:@"提现",@"充值", nil];
-        for (int i=0; i<2; i++) {
+//        NSArray *btnarr = [[NSArray alloc]initWithObjects:@"提现",@"充值", nil];
+//        for (int i=0; i<2; i++) {
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-            btn.tag=10+i;
-            [btn setTitle:btnarr[i] forState:UIControlStateNormal];
+//            btn.tag=10+i;
+        btn.tag=11;
+//            [btn setTitle:btnarr[i] forState:UIControlStateNormal];
+        [btn setTitle:@"充值" forState:UIControlStateNormal];
             [btn setTintColor:[UIColor whiteColor]];
-            btn.frame = CGMAKE(10+((_tableview.frame.size.width-30)/2)*i+(i*10), size.height+55, (_tableview.frame.size.width-30)/2, 30);
-            if (i==0) {
+//            btn.frame = CGMAKE(10+((_tableview.frame.size.width-30)/2)*i+(i*10), size.height+55, (_tableview.frame.size.width-30)/2, 30);
+        btn.frame = CGMAKE(10, size.height+55, SCREEN_WIDTH-30, 30);
+//            if (i==0) {
                 [btn setBackgroundColor:[UIColor redColor]];
-            }else
-            {
-                
-                [btn setBackgroundColor:[UIColor greenColor]];
-            }
+//            }else
+//            {
+//                
+//                [btn setBackgroundColor:[UIColor greenColor]];
+//            }
             [btn addTarget:self action:@selector(Click:) forControlEvents:UIControlEventTouchUpInside];
             [view1 addSubview:btn];
-        }
+//        }
         UILabel *lab_ZJ= [[UILabel alloc]initWithFrame:CGMAKE(10, 140, 200, 16)];
         [lab_ZJ setTextColor:RGB(54, 54, 54)];
         [lab_ZJ setText:@"最近30天收支明细"];
         [lab_ZJ setFont:[UIFont systemFontOfSize:12]];
-        
-        
         
         
         [view1 addSubview:lab_yuan];
